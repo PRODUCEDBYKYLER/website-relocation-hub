@@ -40,7 +40,7 @@ const AboutSection = () => {
         {/* Portrait — bleeds to right edge */}
         <div ref={rightRef} className="reveal reveal-right px-6 md:pr-0">
           <img
-            src="/headshot.3 copy.jpeg"
+            src="/headshot.jpeg"
             alt="Kyler Chavez"
             className="w-full aspect-[4/5] object-cover object-top rounded-2xl md:rounded-r-none"
           />
