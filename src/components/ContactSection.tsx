@@ -19,7 +19,7 @@ const ContactSection = () => {
     data.set("service", service);
 
     try {
-      const res = await fetch("https://formspree.io/f/kyler@producedbykyler.com", {
+      const res = await fetch("https://formspree.io/f/mlgonyrr", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
