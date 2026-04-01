@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Mail } from "lucide-react";
+import { Instagram, Youtube, Mail, BookOpen } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +16,10 @@ const Footer = () => {
           <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
             <Youtube size={18} />
           </a>
-          <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
+          <a href="https://producedbykyler.substack.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Substack">
+            <BookOpen size={18} />
+          </a>
+          <a href="mailto:kyler@producedbykyler.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
             <Mail size={18} />
           </a>
         </div>
