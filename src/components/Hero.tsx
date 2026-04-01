@@ -19,7 +19,7 @@ const Hero = () => {
 
       {/* Top bar */}
       <div className="relative z-10 flex justify-between items-start">
-        <p className="text-primary text-xs tracking-[0.35em] uppercase">Audio Producer</p>
+        <p className="text-primary text-lg md:text-2xl tracking-[0.35em] uppercase">Audio Producer</p>
         <p className="text-muted-foreground text-xs text-right hidden md:block">
           Round Rock, TX<br />
           <span className="italic">(yes, near Austin — no, not the same thing)</span>
@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Big name + CTA */}
       <div className="relative z-10">
         <div ref={nameRef} className="reveal">
-          <h1 className="text-[17vw] md:text-[14vw] font-bold text-foreground leading-[0.85] tracking-tight uppercase select-none">
+          <h1 className="text-[11vw] md:text-[9vw] font-bold text-foreground leading-[0.85] tracking-tight uppercase select-none">
             Kyler<br />Chavez
           </h1>
         </div>

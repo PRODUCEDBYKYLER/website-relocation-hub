@@ -32,10 +32,10 @@ const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: nu
         {service.num}
       </span>
       <div>
-        <h3 className="text-2xl md:text-4xl font-bold text-foreground group-hover:translate-x-2 transition-transform duration-300 leading-tight">
+        <h3 className="text-3xl md:text-5xl font-bold text-foreground group-hover:translate-x-2 transition-transform duration-300 leading-tight">
           {service.title}
         </h3>
-        <p className="text-muted-foreground text-sm mt-2 max-w-md leading-relaxed opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+        <p className="text-muted-foreground text-base mt-2 max-w-md leading-relaxed opacity-60 group-hover:opacity-100 transition-opacity duration-300">
           {service.description}
         </p>
       </div>
