@@ -32,7 +32,7 @@ const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: nu
         {service.num}
       </span>
       <div>
-        <h3 className="text-3xl md:text-5xl font-bold text-foreground group-hover:translate-x-2 transition-transform duration-300 leading-tight">
+        <h3 className="text-2xl md:text-4xl font-normal text-foreground group-hover:translate-x-2 transition-transform duration-300 leading-tight">
           {service.title}
         </h3>
         <p className="text-muted-foreground text-base mt-2 max-w-md leading-relaxed opacity-60 group-hover:opacity-100 transition-opacity duration-300">
@@ -55,7 +55,7 @@ const ServicesSection = () => {
         <div ref={headingRef} className="reveal flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">What I Do</p>
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">Services</h2>
+            <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Services</h2>
           </div>
           <p className="text-muted-foreground text-sm max-w-xs md:text-right">
             Every project gets the same attention — whether it's your debut single or your Magnum Opus. I want to see your vision come to life.

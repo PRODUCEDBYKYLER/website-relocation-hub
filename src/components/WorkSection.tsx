@@ -83,7 +83,7 @@ const WorkSection = () => {
         <div ref={headingRef} className="reveal flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">My Work</p>
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">Productions</h2>
+            <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Productions</h2>
           </div>
           <p className="text-muted-foreground text-sm max-w-xs md:text-right">
             Produced by Kyler Chavez.

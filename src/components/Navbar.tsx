@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/30">
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#home" className="font-['Cormorant_Garamond'] text-xl font-semibold text-foreground tracking-wide">
+        <a href="#home" className="font-['Tanker'] text-xl font-semibold text-foreground tracking-wide">
           Produced by Kyler
         </a>
 

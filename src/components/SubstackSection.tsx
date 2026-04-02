@@ -13,6 +13,7 @@ const SubstackSection = () => {
   const headingRef = useScrollReveal<HTMLDivElement>();
   const embedRef = useScrollReveal<HTMLDivElement>(200);
   const postRef = useScrollReveal<HTMLAnchorElement>(100);
+  const studioRef = useScrollReveal<HTMLDivElement>(100);
   const [post, setPost] = useState<LatestPost | null>(null);
 
   useEffect(() => {
@@ -44,14 +45,28 @@ const SubstackSection = () => {
     <section id="newsletter" className="py-24 px-6 md:px-14">
       <div className="w-full h-px bg-border mb-24" />
 
+      {/* Studio photo */}
+      <div ref={studioRef} className="reveal container mx-auto max-w-5xl mb-24">
+        <div className="relative rounded-2xl overflow-hidden border border-border/40">
+          <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary" />
+          <img
+            src="/studio-4.jpg"
+            alt="In the studio"
+            className="w-full object-cover max-h-[420px]"
+          />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background/80 to-transparent" />
+          <p className="absolute bottom-4 left-6 text-xs tracking-[0.3em] uppercase text-foreground/60">In the studio</p>
+        </div>
+      </div>
+
       <div className="container mx-auto max-w-5xl">
         <div ref={headingRef} className="reveal flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">Stay Connected</p>
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">Newsletter</h2>
+            <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Newsletter</h2>
           </div>
           <p className="text-muted-foreground text-sm max-w-xs md:text-right">
-            Thoughts on music, production, and the occasional thing that has nothing to do with either.
+            My thoughts on life and music...and the occasional anti-AI rant.
           </p>
         </div>
 

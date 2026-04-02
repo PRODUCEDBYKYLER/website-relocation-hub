@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="border-t border-border/50 py-12 px-6 md:px-14">
       <div className="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
-          <p className="font-['Cormorant_Garamond'] text-foreground font-semibold">Kyler Chavez</p>
+          <p className="font-['Tanker'] text-foreground font-semibold">Kyler Chavez</p>
           <p className="text-muted-foreground/70 text-xs italic mt-1">obsessed with music since forever</p>
         </div>
 

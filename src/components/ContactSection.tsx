@@ -39,7 +39,7 @@ const ContactSection = () => {
     <section id="contact" className="py-24 px-6">
       <div className="container mx-auto max-w-2xl">
         <p className="text-primary text-sm tracking-[0.3em] uppercase text-center mb-3">Get In Touch</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">Book Your Project</h2>
+        <h2 className="text-2xl md:text-3xl font-normal text-center text-foreground mb-4">Book Your Project</h2>
         <div className="flex items-center justify-center gap-2 text-muted-foreground text-sm mb-12">
           <MapPin size={14} className="text-primary" />
           <span>Round Rock, TX</span>
