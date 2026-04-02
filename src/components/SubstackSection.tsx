@@ -12,7 +12,6 @@ type LatestPost = {
 const SubstackSection = () => {
   const headingRef = useScrollReveal<HTMLDivElement>();
   const embedRef = useScrollReveal<HTMLDivElement>(200);
-  const postRef = useScrollReveal<HTMLAnchorElement>(100);
   const studioRef = useScrollReveal<HTMLDivElement>(100);
   const [post, setPost] = useState<LatestPost | null>(null);
 
@@ -73,11 +72,10 @@ const SubstackSection = () => {
         {/* Latest post card */}
         {post && (
           <a
-            ref={postRef}
             href={post.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="reveal group block border border-border/40 hover:border-primary/50 rounded-2xl p-6 md:p-8 mb-8 transition-colors duration-300"
+            className="group block border border-border/40 hover:border-primary/50 rounded-2xl p-6 md:p-8 mb-8 transition-colors duration-300"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
