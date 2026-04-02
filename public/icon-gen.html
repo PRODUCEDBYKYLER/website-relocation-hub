@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    @font-face {
+      font-family: 'Tanker';
+      src: url('/fonts/Tanker-Regular.woff2') format('woff2');
+      font-display: block;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1a2e; display: flex; gap: 40px; padding: 40px; align-items: flex-start; }
+
+    .icon {
+      width: 200px;
+      height: 200px;
+      border-radius: 36px;
+      background: hsl(30, 12%, 7%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      gap: 0;
+    }
+
+    /* Olive bottom bar accent */
+    .icon::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 10px;
+      background: hsl(75, 38%, 36%);
+    }
+
+    .icon .top {
+      font-family: 'Tanker', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: hsl(75, 38%, 50%);
+      line-height: 1;
+    }
+
+    .icon .mid {
+      font-family: 'Tanker', sans-serif;
+      font-size: 90px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: hsl(38, 33%, 78%);
+      line-height: 0.9;
+    }
+
+    /* Version 2: Just K */
+    .icon-k {
+      width: 200px;
+      height: 200px;
+      border-radius: 36px;
+      background: hsl(30, 12%, 7%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid hsl(75, 38%, 36%);
+    }
+
+    .icon-k .letter {
+      font-family: 'Tanker', sans-serif;
+      font-size: 140px;
+      font-weight: 400;
+      color: hsl(38, 33%, 78%);
+      line-height: 1;
+      margin-top: 10px;
+    }
+
+    .icon-k .dot {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: hsl(75, 38%, 36%);
+    }
+
+    /* Version 3: Stacked PBK */
+    .icon-pbk {
+      width: 200px;
+      height: 200px;
+      border-radius: 36px;
+      background: hsl(30, 12%, 7%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      gap: 4px;
+    }
+
+    .icon-pbk .small {
+      font-family: 'Tanker', sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: hsl(75, 38%, 50%);
+    }
+
+    .icon-pbk .big {
+      font-family: 'Tanker', sans-serif;
+      font-size: 76px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: hsl(38, 33%, 78%);
+      line-height: 0.9;
+    }
+
+    .icon-pbk .line {
+      width: 60px;
+      height: 3px;
+      background: hsl(75, 38%, 36%);
+      margin: 6px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Option A: "PB / K" stacked -->
+  <div class="icon">
+    <span class="top">PB</span>
+    <span class="mid">K</span>
+  </div>
+
+  <!-- Option B: Just "K" with olive border -->
+  <div class="icon-k">
+    <span class="letter">K</span>
+    <div class="dot"></div>
+  </div>
+
+  <!-- Option C: "by / KYLER" -->
+  <div class="icon-pbk">
+    <span class="small">by</span>
+    <span class="big">Kyler</span>
+    <div class="line"></div>
+  </div>
+
+</body>
+</html>
