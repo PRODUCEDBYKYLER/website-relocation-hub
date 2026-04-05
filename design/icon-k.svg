@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Dark background with rounded corners -->
+  <rect width="100" height="100" rx="18" fill="#131109"/>
+  <!-- Olive border -->
+  <rect x="2" y="2" width="96" height="96" rx="16" fill="none" stroke="#607a35" stroke-width="4"/>
+  <!-- K letter -->
+  <text
+    x="50"
+    y="74"
+    text-anchor="middle"
+    font-family="'Arial Black', 'Impact', 'Haettenschweiler', sans-serif"
+    font-size="72"
+    font-weight="900"
+    fill="#cdbf9a"
+    letter-spacing="-2"
+  >K</text>
+  <!-- Olive dot -->
+  <circle cx="78" cy="78" r="7" fill="#607a35"/>
+</svg>
