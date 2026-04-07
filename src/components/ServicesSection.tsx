@@ -6,28 +6,28 @@ const services = [
     title: "Production",
     description: "Full-service music production — from the first idea to a finished record, built around your sound.",
     aside: "where it all starts",
+    href: null,
   },
   {
     num: "02",
     title: "Mixing",
     description: "Balanced, polished mixes that bring clarity and punch to every track.",
     aside: "Mixes that match your music",
+    href: null,
   },
   {
     num: "03",
     title: "Podcast Production",
     description: "End-to-end podcast production — from recording to editing and delivery.",
     aside: "your voice for your audience",
+    href: "/podcast-production",
   },
 ];
 
 const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: number }) => {
   const rowRef = useScrollReveal<HTMLDivElement>(delay);
-  return (
-    <div
-      ref={rowRef}
-      className="reveal group border-b border-border/40 hover:border-primary/40 py-8 md:py-10 grid grid-cols-[2.5rem_1fr] md:grid-cols-[2.5rem_1fr_auto] items-start md:items-center gap-4 md:gap-8 transition-colors duration-300 cursor-default"
-    >
+  const inner = (
+    <>
       <span className="text-xs font-mono text-muted-foreground/40 group-hover:text-primary transition-colors duration-300 pt-1">
         {service.num}
       </span>
@@ -42,6 +42,22 @@ const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: nu
       <p className="hidden md:block text-primary/0 group-hover:text-primary/60 text-xs italic text-right max-w-[200px] transition-colors duration-300">
         {service.aside}
       </p>
+    </>
+  );
+
+  const className = "reveal group border-b border-border/40 hover:border-primary/40 py-8 md:py-10 grid grid-cols-[2.5rem_1fr] md:grid-cols-[2.5rem_1fr_auto] items-start md:items-center gap-4 md:gap-8 transition-colors duration-300";
+
+  if (service.href) {
+    return (
+      <a ref={rowRef as React.Ref<HTMLAnchorElement>} href={service.href} className={className}>
+        {inner}
+      </a>
+    );
+  }
+
+  return (
+    <div ref={rowRef} className={`${className} cursor-default`}>
+      {inner}
     </div>
   );
 };
