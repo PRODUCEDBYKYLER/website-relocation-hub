@@ -29,6 +29,7 @@ const ContactSection = () => {
         setSubmitted(true);
         form.reset();
         setService("");
+        gtag('event', 'conversion_event_submit_lead_form', {});
       }
     } finally {
       setSubmitting(false);

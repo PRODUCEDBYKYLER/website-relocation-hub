@@ -103,6 +103,7 @@ const PodcastProduction = () => {
       if (res.ok) {
         setSubmitted(true);
         form.reset();
+        gtag('event', 'conversion_event_submit_lead_form', {});
       }
     } finally {
       setSubmitting(false);
