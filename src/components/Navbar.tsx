@@ -23,15 +23,25 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className={`text-sm transition-colors duration-300 ${location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.href === "/contact" ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 px-5 py-2 rounded-full font-medium"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={`text-sm transition-colors duration-300 ${location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <div className="flex items-center gap-3 ml-4">
             <a href="https://www.instagram.com/producedbykyler/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
               <Instagram size={18} />
