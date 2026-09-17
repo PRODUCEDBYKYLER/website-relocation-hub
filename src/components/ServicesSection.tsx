@@ -11,7 +11,7 @@ const services = [
   {
     num: "02",
     title: "Production",
-    description: "Full-service music production — from the first idea to a finished record, built around your sound.",
+    description: "Full-service music production at my studio space in Austin Texas. I keep your signature ideas and voice centered around the production we will build.",
     aside: "where it all starts",
     href: null,
   },
