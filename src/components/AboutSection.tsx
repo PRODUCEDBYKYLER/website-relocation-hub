@@ -16,16 +16,16 @@ const AboutSection = () => {
             The<br />Producer.
           </h2>
           <p className="text-foreground/80 text-lg leading-relaxed mb-5">
-            Based in Round Rock, Texas. Obsessed with great sound and, most importantly, having a relationship with <em>you</em>.
+            Based in Round Rock, Texas and obsessed with everything production.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-5">
-            Whether it's tracking vocals, mixing a full project, or producing a podcast — Kyler brings a collaborative, professional approach to every session.
+            Whether it's tracking vocals, mixing a full project — Kyler brings a collaborative, professional approach to every session.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            I have never given up on a song. My promise to you is that we will try every combination to make sure the final production is something you are proud of, and fits your voice as an artist.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            The goal is simple: take your project and make it better than you could imagine.
-          </p>
-          <p className="text-primary/70 text-sm italic mt-8">
-            (serious about the craft. not always serious about everything else.)
+            My goal is simple — take your signature voice and craft a production that reflects your voice and the emotion of the song.
           </p>
         </div>
 

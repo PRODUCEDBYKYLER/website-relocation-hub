@@ -94,16 +94,15 @@ const SubstackSection = () => {
           </a>
         )}
 
-        {/* Subscribe embed */}
         <div ref={embedRef} className="reveal">
-          <iframe
-            src="https://producedbykyler.substack.com/embed"
-            width="100%"
-            height="150"
-            frameBorder="0"
-            scrolling="no"
-            className="rounded-xl"
-          />
+          <a
+            href="https://producedbykyler.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Read more on Substack <ArrowUpRight size={14} />
+          </a>
         </div>
       </div>
     </section>
