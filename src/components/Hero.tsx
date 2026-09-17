@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Hero = () => {
@@ -57,11 +56,6 @@ const Hero = () => {
           <p className="text-muted-foreground/60 text-xs tracking-[0.25em] uppercase">
             Round Rock, TX
           </p>
-          <div className="flex items-center gap-4">
-<Button asChild size="lg" className="rounded-full px-10 text-base font-medium">
-              <a href="#contact">Book Your Project</a>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
