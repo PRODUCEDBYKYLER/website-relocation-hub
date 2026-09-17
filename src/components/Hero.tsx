@@ -25,8 +25,7 @@ const Hero = () => {
 
       {/* Top bar */}
 
-      <div className="relative z-10 flex justify-between items-start">
-        <p className="text-primary text-sm tracking-[0.35em] uppercase leading-tight">Producer @<br />Redeemer Studio</p>
+      <div className="relative z-10 flex justify-end items-start">
         <p className="text-muted-foreground text-xs text-right hidden md:block">
           Round Rock, TX<br />
           <span className="italic">(yes, near Austin — no, not the same thing)</span>
