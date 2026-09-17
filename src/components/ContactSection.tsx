@@ -63,6 +63,7 @@ const ContactSection = () => {
                 <SelectValue placeholder="Select a service" />
               </SelectTrigger>
               <SelectContent>
+                <SelectItem value="collaboration">Collaboration</SelectItem>
                 <SelectItem value="recording">Recording</SelectItem>
                 <SelectItem value="mixing">Mixing</SelectItem>
                 <SelectItem value="other">Other</SelectItem>

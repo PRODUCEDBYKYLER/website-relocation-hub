@@ -3,13 +3,20 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const services = [
   {
     num: "01",
+    title: "Collaborator",
+    description: "Whether simple lyric changes or finding the right tempo, I'll make sure your song without production will be the best that it can.",
+    aside: "your song, elevated",
+    href: null,
+  },
+  {
+    num: "02",
     title: "Production",
     description: "Full-service music production — from the first idea to a finished record, built around your sound.",
     aside: "where it all starts",
     href: null,
   },
   {
-    num: "02",
+    num: "03",
     title: "Mixing",
     description: "Balanced, polished mixes that bring clarity and punch to every track.",
     aside: "Mixes that match your music",
