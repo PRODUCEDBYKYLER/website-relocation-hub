@@ -23,15 +23,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
       </div>
 
-      {/* Top bar */}
-
-      <div className="relative z-10 flex justify-end items-start">
-        <p className="text-muted-foreground text-xs text-right hidden md:block">
-          Round Rock, TX<br />
-          <span className="italic">(yes, near Austin — no, not the same thing)</span>
-        </p>
-      </div>
-
       {/* Middle offset tagline */}
       <div ref={subRef} className="reveal relative z-10 self-end max-w-sm md:max-w-md text-right">
         <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light">
@@ -53,7 +44,7 @@ const Hero = () => {
 
         <div ref={ctaRef} className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6">
           <p className="text-muted-foreground/60 text-xs tracking-[0.25em] uppercase">
-            Round Rock, TX
+            @ Redeemer Studio
           </p>
         </div>
       </div>
