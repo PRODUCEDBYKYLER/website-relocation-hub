@@ -65,7 +65,6 @@ const ContactSection = () => {
               <SelectContent>
                 <SelectItem value="recording">Recording</SelectItem>
                 <SelectItem value="mixing">Mixing</SelectItem>
-                <SelectItem value="podcast">Podcast Production</SelectItem>
                 <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>

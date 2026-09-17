@@ -15,13 +15,6 @@ const services = [
     aside: "Mixes that match your music",
     href: null,
   },
-  {
-    num: "03",
-    title: "Podcast Production",
-    description: "End-to-end podcast production — from recording to editing and delivery.",
-    aside: "your voice for your audience",
-    href: "/podcast-production",
-  },
 ];
 
 const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: number }) => {
@@ -74,7 +67,7 @@ const ServicesSection = () => {
             <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Services</h2>
           </div>
           <p className="text-muted-foreground text-sm max-w-xs md:text-right">
-            Every project gets the same attention — whether it's your debut single or your Magnum Opus. I want to see your vision come to life.
+            I personally work start-to-finish on any work we do together and will bring on collaborators as needed — per your request.
           </p>
         </div>
 

@@ -24,9 +24,11 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="text-muted-foreground text-xs">
-          &copy; {new Date().getFullYear()} Kyler Chavez. All rights reserved.
-        </p>
+        <div className="text-right">
+          <a href="mailto:kyler@producedbykyler.com" className="text-muted-foreground/70 text-xs hover:text-primary transition-colors block">kyler@producedbykyler.com</a>
+          <p className="text-muted-foreground/50 text-xs mt-1">Round Rock, TX</p>
+          <p className="text-muted-foreground/40 text-xs mt-2">&copy; {new Date().getFullYear()} Kyler Chavez. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

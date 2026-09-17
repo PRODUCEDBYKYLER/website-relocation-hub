@@ -11,14 +11,17 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex flex-col justify-between px-6 md:px-14 pt-28 pb-14 overflow-hidden"
     >
-      {/* Pedalboard background */}
+      {/* Background photo — anchored right like an editorial layout */}
       <div className="absolute inset-0 pointer-events-none">
         <img
           src="/pedalboard.jpg"
           alt=""
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-[80%_top]"
         />
-        <div className="absolute inset-0 bg-background/60" />
+        {/* Left fade so text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/75 via-60% to-transparent" />
+        {/* Bottom fade to ground the section */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
       </div>
 
       {/* Top bar */}
