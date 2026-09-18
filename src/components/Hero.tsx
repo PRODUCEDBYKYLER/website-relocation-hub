@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
       </div>
 
-      {/* Middle offset tagline */}
+      {/* Top right: tagline */}
       <div ref={subRef} className="reveal relative z-10 self-end max-w-sm md:max-w-md text-right">
         <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light">
           Your ideas,<br />
@@ -32,17 +32,14 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Big name + CTA */}
+      {/* Bottom right: name */}
       <div className="relative z-10 flex flex-col items-end text-right">
         <div ref={nameRef} className="reveal">
           <h1 className="text-[10vw] md:text-[7vw] font-normal text-foreground leading-[0.9] uppercase select-none">
             Kyler<br />Chavez
           </h1>
         </div>
-
-        {/* Solid accent line under name */}
-        <div className="w-24 h-0.5 bg-primary mt-4 mb-6 ml-auto" />
-
+        <div className="w-24 h-0.5 bg-primary mt-4 ml-auto" />
       </div>
     </section>
   );
