@@ -29,7 +29,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right: portrait with editorial gradient bleeds */}
-        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[520px] md:min-h-[700px]">
+        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[520px] md:min-h-[860px]">
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
@@ -39,7 +39,7 @@ const AboutSection = () => {
           {/* Left fade — blend into text column */}
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
           {/* Bottom fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 via-25% to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 via-[15%] to-transparent" />
           {/* Top fade — edge blend */}
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/30 via-[20%] to-transparent" />
         </div>
