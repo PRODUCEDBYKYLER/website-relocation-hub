@@ -15,11 +15,11 @@ const Hero = () => {
         <img
           src="/pedalboard.jpg"
           alt=""
-          className="absolute inset-x-0 bottom-0 w-full object-cover object-[50%_top]"
+          className="absolute inset-x-0 bottom-0 w-full object-cover object-[65%_top]"
           style={{ top: "64px", height: "calc(100% - 64px)" }}
         />
         {/* Left fade so text is always readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-20% via-background/50 via-50% to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 from-10% via-background/30 via-40% to-transparent" />
         {/* Bottom fade to ground the section */}
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
       </div>
