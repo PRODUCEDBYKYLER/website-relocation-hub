@@ -29,12 +29,12 @@ const AboutSection = () => {
         </div>
 
         {/* Right: portrait with editorial gradient bleeds */}
-        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[420px]">
+        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[520px]">
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "30% top" }}
+            style={{ objectPosition: "center 20%" }}
           />
           {/* Left fade — subtle blend into text column */}
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/15 via-25% to-transparent" />
