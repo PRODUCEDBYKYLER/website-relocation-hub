@@ -40,8 +40,8 @@ const AboutSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 via-25% to-transparent" />
-          {/* Top fade — subtle edge blend */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent via-[15%] to-transparent" />
+          {/* Top fade — edge blend */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/30 via-[20%] to-transparent" />
         </div>
       </div>
     </section>
