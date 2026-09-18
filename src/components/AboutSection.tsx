@@ -34,7 +34,7 @@ const AboutSection = () => {
             src="/headshot.jpeg"
             alt="Kyler Chavez"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center 10%" }}
+            style={{ objectPosition: "center 28%" }}
           />
           {/* Left fade — blend into text column */}
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
