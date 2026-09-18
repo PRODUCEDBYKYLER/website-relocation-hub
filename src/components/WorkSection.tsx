@@ -68,10 +68,11 @@ const WorkSection = ({ limit = 3 }: { limit?: number }) => {
   const displayTracks = tracks.slice(0, limit);
 
   return (
-    <section id="work" className="py-24 px-6">
+    <section id="work" className="py-24">
       <div className="w-full h-px bg-border mb-24" />
 
-      <div className="container mx-auto max-w-5xl">
+      {/* Offset LEFT: less left padding, more right breathing room */}
+      <div className="pl-6 md:pl-14 pr-[8%] max-w-[1200px]">
         <div ref={headingRef} className="reveal flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">My Work</p>

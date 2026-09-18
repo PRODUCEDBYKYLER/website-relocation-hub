@@ -66,8 +66,9 @@ const ServicesSection = () => {
   const headingRef = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="services" className="py-24 px-6 md:px-14">
-      <div className="container mx-auto max-w-5xl">
+    <section id="services" className="py-24">
+      {/* Offset RIGHT: large left indent so it visually starts right of center */}
+      <div className="pl-[12%] md:pl-[18%] pr-6 md:pr-14">
         <div ref={headingRef} className="reveal flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">What I Do</p>
