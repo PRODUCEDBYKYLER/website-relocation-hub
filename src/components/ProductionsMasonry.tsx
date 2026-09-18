@@ -10,8 +10,8 @@ const SpotifyIcon = () => (
   </svg>
 );
 
-// Every 4th card (0-indexed) is portrait-tall to create the masonry stagger
-const cardAspect = (i: number) => (i % 4 === 0 ? "aspect-[3/4]" : "aspect-square");
+// Alternate portrait/square so every column gets visible stagger throughout
+const cardAspect = (i: number) => i % 2 === 0 ? "aspect-[3/4]" : "aspect-square";
 
 const MasonryCard = ({ trackId, index }: { trackId: string; index: number }) => {
   const [info, setInfo] = useState<TrackInfo | null>(null);
