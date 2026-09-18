@@ -6,7 +6,6 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-24 overflow-hidden">
-      <div className="w-full h-px bg-border mb-24" />
 
       <div className="grid md:grid-cols-2 items-center gap-12 md:gap-0">
         {/* Left: heading + copy — padded */}
