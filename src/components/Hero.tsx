@@ -35,7 +35,7 @@ const Hero = () => {
       {/* Big name + CTA */}
       <div className="relative z-10">
         <div ref={nameRef} className="reveal">
-          <h1 className="text-[9vw] md:text-[7vw] font-normal text-foreground leading-[0.9] uppercase select-none">
+          <h1 className="text-[6vw] md:text-[4.5vw] font-normal text-foreground leading-[0.9] uppercase select-none">
             Kyler<br />Chavez
           </h1>
         </div>
@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="w-24 h-0.5 bg-primary mt-4 mb-6" />
 
         <div ref={ctaRef} className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <p className="text-muted-foreground/60 text-sm tracking-[0.25em] uppercase">
+          <p className="text-muted-foreground/60 text-xs tracking-[0.25em] uppercase">
             @ Redeemer Studio
           </p>
         </div>
