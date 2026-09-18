@@ -15,11 +15,11 @@ const Hero = () => {
         <img
           src="/pedalboard.jpg"
           alt=""
-          className="absolute inset-x-0 bottom-0 w-full object-cover object-[80%_top]"
-          style={{ top: "64px", height: "calc(100% - 64px)" }}
+          className="absolute bottom-0 object-cover object-top"
+          style={{ top: "64px", height: "calc(100% - 64px)", width: "115%", left: "-15%" }}
         />
-        {/* Left fade so text is always readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 from-10% via-background/30 via-40% to-transparent" />
+        {/* Right fade so text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-l from-background from-25% via-background/50 via-55% to-transparent" />
         {/* Bottom fade to ground the section */}
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
       </div>
@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       {/* Big name + CTA */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col items-end text-right">
         <div ref={nameRef} className="reveal">
           <h1 className="text-[10vw] md:text-[7vw] font-normal text-foreground leading-[0.9] uppercase select-none">
             Kyler<br />Chavez
@@ -41,13 +41,8 @@ const Hero = () => {
         </div>
 
         {/* Solid accent line under name */}
-        <div className="w-24 h-0.5 bg-primary mt-4 mb-6" />
+        <div className="w-24 h-0.5 bg-primary mt-4 mb-6 ml-auto" />
 
-        <div ref={ctaRef} className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <p className="text-muted-foreground/60 text-base tracking-[0.25em] uppercase">
-            @ Redeemer Studio
-          </p>
-        </div>
       </div>
     </section>
   );
