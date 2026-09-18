@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-
-const tracks = [
-  { id: "3fH3Dqsf8HqnoJiaGvUjVe" },
-  { id: "5ZoUiu6rtIcRzaiVGqyOwx" },
-  { id: "3MB5O9YFUnL16UcbtHFbCJ" },
-];
+import { tracks } from "@/data/tracks";
 
 type TrackInfo = { title: string; artist: string; image: string };
 
@@ -41,7 +36,6 @@ const TrackCard = ({ trackId, delay }: { trackId: string; delay: number }) => {
       rel="noopener noreferrer"
       className="reveal group relative aspect-square overflow-hidden rounded-2xl block flex-1"
     >
-      {/* Album art */}
       {info?.image ? (
         <img
           src={info.image}
@@ -52,16 +46,13 @@ const TrackCard = ({ trackId, delay }: { trackId: string; delay: number }) => {
         <div className="w-full h-full bg-secondary animate-pulse" />
       )}
 
-      {/* Base overlay */}
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/65 transition-colors duration-400" />
 
-      {/* Track info — slides up on hover */}
       <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
         <p className="text-white font-semibold text-sm leading-tight truncate">{info?.title}</p>
         <p className="text-white/60 text-xs mt-0.5 truncate">{info?.artist}</p>
       </div>
 
-      {/* Center CTA — fades in on hover */}
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="flex items-center gap-2 bg-[#1DB954] text-black text-xs font-bold px-4 py-2 rounded-full">
           <SpotifyIcon />
@@ -72,8 +63,9 @@ const TrackCard = ({ trackId, delay }: { trackId: string; delay: number }) => {
   );
 };
 
-const WorkSection = () => {
+const WorkSection = ({ limit = 3 }: { limit?: number }) => {
   const headingRef = useScrollReveal<HTMLDivElement>();
+  const displayTracks = tracks.slice(0, limit);
 
   return (
     <section id="work" className="py-24 px-6">
@@ -91,7 +83,7 @@ const WorkSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-4">
-          {tracks.map((track, i) => (
+          {displayTracks.map((track, i) => (
             <TrackCard key={track.id} trackId={track.id} delay={i * 100} />
           ))}
         </div>
