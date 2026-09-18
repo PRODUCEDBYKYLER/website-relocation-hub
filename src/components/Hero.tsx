@@ -15,7 +15,8 @@ const Hero = () => {
         <img
           src="/pedalboard.jpg"
           alt=""
-          className="w-full h-full object-cover object-[50%_top]"
+          className="absolute inset-x-0 bottom-0 w-full object-cover object-[50%_top]"
+          style={{ top: "64px", height: "calc(100% - 64px)" }}
         />
         {/* Left fade so text is always readable */}
         <div className="absolute inset-0 bg-gradient-to-r from-background from-20% via-background/50 via-50% to-transparent" />
