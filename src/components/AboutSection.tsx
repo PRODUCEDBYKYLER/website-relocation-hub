@@ -28,13 +28,19 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Right: portrait bleeds to right edge */}
-        <div ref={rightRef} className="reveal reveal-right px-6 md:px-0">
+        {/* Right: portrait with editorial gradient bleeds */}
+        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden md:h-[640px] h-[480px]">
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
-            className="w-full aspect-[4/5] object-cover object-top rounded-2xl md:rounded-r-none"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
+          {/* Left fade — blends into the text column */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background from-5% via-background/30 via-35% to-transparent" />
+          {/* Bottom fade — grounds the photo */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+          {/* Top fade — softens the top edge */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent" />
         </div>
       </div>
     </section>
