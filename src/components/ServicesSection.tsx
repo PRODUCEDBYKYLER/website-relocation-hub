@@ -75,7 +75,7 @@ const ServicesSection = () => {
             <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Services</h2>
           </div>
           <p className="text-muted-foreground text-sm max-w-xs">
-            I personally work start-to-finish on any work we do together and will bring on collaborators as needed — per your request.
+            Production for your song start-to-finish.
           </p>
         </div>
 
