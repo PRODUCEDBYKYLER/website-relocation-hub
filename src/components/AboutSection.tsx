@@ -33,14 +33,15 @@ const AboutSection = () => {
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: "30% top" }}
           />
-          {/* Left fade — blends into the text column */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background from-5% via-background/30 via-35% to-transparent" />
-          {/* Bottom fade — grounds the photo */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-          {/* Top fade — softens the top edge */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-transparent" />
+          {/* Left fade — subtle blend into text column */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/15 via-25% to-transparent" />
+          {/* Bottom fade — light grounding */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+          {/* Top fade — very soft */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-transparent" />
         </div>
       </div>
     </section>
