@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 overflow-hidden">
 
-      <div className="grid md:grid-cols-2 items-stretch gap-12 md:gap-0">
+      <div className="grid md:grid-cols-2 items-start gap-12 md:gap-0">
         {/* Left: heading + copy — padded */}
         <div ref={leftRef} className="reveal px-6 md:pl-14 md:pr-16">
           <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">About Me</p>
@@ -29,17 +29,19 @@ const AboutSection = () => {
         </div>
 
         {/* Right: portrait with editorial gradient bleeds */}
-        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[520px]">
+        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[520px] md:min-h-[700px]">
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center 15%" }}
+            style={{ objectPosition: "center 10%" }}
           />
           {/* Left fade — blend into text column */}
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 via-25% to-transparent" />
+          {/* Top fade — subtle edge blend */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent via-[15%] to-transparent" />
         </div>
       </div>
     </section>
