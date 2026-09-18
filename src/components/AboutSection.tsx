@@ -34,14 +34,12 @@ const AboutSection = () => {
             src="/headshot.jpeg"
             alt="Kyler Chavez"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: "center 20%" }}
+            style={{ objectPosition: "center 15%" }}
           />
-          {/* Left fade — subtle blend into text column */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/15 via-25% to-transparent" />
+          {/* Left fade — blend into text column */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
           {/* Bottom fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 via-30% to-transparent" />
-          {/* Top fade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/20 via-30% to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 via-25% to-transparent" />
         </div>
       </div>
     </section>
