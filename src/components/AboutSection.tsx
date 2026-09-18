@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 overflow-hidden">
 
-      <div className="grid md:grid-cols-2 items-center gap-12 md:gap-0">
+      <div className="grid md:grid-cols-2 items-stretch gap-12 md:gap-0">
         {/* Left: heading + copy — padded */}
         <div ref={leftRef} className="reveal px-6 md:pl-14 md:pr-16">
           <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">About Me</p>
@@ -29,7 +29,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right: portrait with editorial gradient bleeds */}
-        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden md:h-[640px] h-[480px]">
+        <div ref={rightRef} className="reveal reveal-right relative overflow-hidden min-h-[420px]">
           <img
             src="/headshot.jpeg"
             alt="Kyler Chavez"
@@ -38,10 +38,10 @@ const AboutSection = () => {
           />
           {/* Left fade — subtle blend into text column */}
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/15 via-25% to-transparent" />
-          {/* Bottom fade — light grounding */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
-          {/* Top fade — very soft */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-transparent" />
+          {/* Bottom fade */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 via-30% to-transparent" />
+          {/* Top fade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/20 via-30% to-transparent" />
         </div>
       </div>
     </section>
