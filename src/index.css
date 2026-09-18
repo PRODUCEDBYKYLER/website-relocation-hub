@@ -90,6 +90,15 @@
     letter-spacing: 0.01em;
   }
 
+  button, a, input, select, textarea {
+    font-family: inherit;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.25);
+    color: hsl(var(--foreground));
+  }
+
   html {
     scroll-behavior: smooth;
   }

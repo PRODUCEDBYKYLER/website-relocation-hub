@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-between px-6 md:px-14 pt-28 pb-14 overflow-hidden"
+      className="relative min-h-[75vh] flex flex-col justify-between px-6 md:px-14 pt-28 pb-14 overflow-hidden"
     >
       {/* Background photo — anchored right like an editorial layout */}
       <div className="absolute inset-0 pointer-events-none">

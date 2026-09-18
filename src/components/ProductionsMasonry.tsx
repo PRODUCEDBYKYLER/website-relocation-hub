@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { tracks } from "@/data/tracks";
+
+// 6 picks from distinct projects/albums
+const featuredProductions = [
+  { id: "3fH3Dqsf8HqnoJiaGvUjVe" }, // On My Own – David Duque
+  { id: "5ZoUiu6rtIcRzaiVGqyOwx" }, // You Will Remain – Redeemer Round Rock
+  { id: "10iIBOuaJhQixti9v3RQTY" }, // Little Hearts – Ben Hulett
+  { id: "6cfDancJgdT1AtqCmdVgL0" }, // O Holy Night – RRR Christmas EP
+  { id: "0IPFFMJZ89zLymBIqG4RSV" }, // Anchor Of My Soul – Redeemer Network Music
+  { id: "3MYpDo8QUJCZsvXMi2rZ2W" }, // Make Room – Redeemer Round Rock
+];
 
 type TrackInfo = { title: string; artist: string; image: string };
 
@@ -76,7 +85,7 @@ const ProductionsMasonry = () => (
   <section className="px-6 pb-24">
     <div className="container mx-auto max-w-6xl">
       <div className="columns-2 md:columns-3 gap-4">
-        {tracks.map((track, i) => (
+        {featuredProductions.map((track, i) => (
           <MasonryCard key={track.id} trackId={track.id} index={i} />
         ))}
       </div>
