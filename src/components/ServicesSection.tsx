@@ -3,7 +3,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const services = [
   {
     num: "01",
-    title: "Collaborator",
+    title: "Collaboration",
     description: "Whether simple lyric changes or finding the right tempo, I'll make sure your song without production will be the best that it can.",
     aside: "your song, elevated",
     href: null,
@@ -28,7 +28,7 @@ const ServiceRow = ({ service, delay }: { service: typeof services[0]; delay: nu
   const rowRef = useScrollReveal<HTMLDivElement>(delay);
   const inner = (
     <>
-      <p className="hidden md:block text-primary/0 group-hover:text-primary/60 text-xs italic text-left max-w-[200px] transition-colors duration-300">
+      <p className="hidden md:block text-primary/0 group-hover:text-primary/60 text-lg italic text-left max-w-[200px] transition-colors duration-300">
         {service.aside}
       </p>
       <div className="text-right">

@@ -42,6 +42,11 @@ const Hero = () => {
         <div className="w-24 h-0.5 bg-primary mt-4 ml-auto" />
       </div>
 
+      {/* Photo credit */}
+      <p className="absolute bottom-4 left-4 z-10 text-[10px] tracking-widest uppercase text-foreground/25 [writing-mode:vertical-rl] rotate-180">
+        Photo: Jake Rosser
+      </p>
+
       {/* Full-width divider at the bottom of the hero */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-border z-10" />
     </section>

@@ -40,6 +40,10 @@ const AboutSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-background from-[2%] via-background/10 via-20% to-transparent" />
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 via-[15%] to-transparent" />
+          {/* Photo credit */}
+          <p className="absolute bottom-4 right-3 z-10 text-[10px] tracking-widest uppercase text-foreground/25 [writing-mode:vertical-rl]">
+            Photo: David Duque
+          </p>
           {/* Top fade — edge blend */}
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/30 via-[20%] to-transparent" />
         </div>
