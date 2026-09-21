@@ -78,7 +78,7 @@ const WorkSection = ({ limit = 3 }: { limit?: number }) => {
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">My Work</p>
             <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Productions</h2>
           </div>
-          <p className="text-muted-foreground text-sm max-w-xs md:text-right">
+          <p className="text-muted-foreground text-lg max-w-xs md:text-right">
             Produced by me in Austin, TX.
           </p>
         </div>
