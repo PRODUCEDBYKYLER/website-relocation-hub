@@ -74,7 +74,7 @@ const ServicesSection = () => {
             <p className="text-primary text-xs tracking-[0.35em] uppercase mb-3">What I Do</p>
             <h2 className="text-3xl md:text-5xl font-normal text-foreground leading-tight">Services</h2>
           </div>
-          <p className="text-muted-foreground text-xl max-w-xs">
+          <p className="text-muted-foreground text-lg max-w-xs">
             Production for your song start-to-finish.
           </p>
         </div>
