@@ -41,7 +41,7 @@ const AboutSection = () => {
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 via-[15%] to-transparent" />
           {/* Photo credit */}
-          <p className="absolute bottom-4 right-3 z-10 text-[10px] tracking-widest uppercase text-foreground/25 [writing-mode:vertical-rl]">
+          <p className="absolute bottom-4 right-4 z-10 text-[11px] tracking-wider text-foreground/40">
             Photo: David Duque
           </p>
           {/* Top fade — edge blend */}

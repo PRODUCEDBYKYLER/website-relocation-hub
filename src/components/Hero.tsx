@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       {/* Photo credit */}
-      <p className="absolute bottom-4 left-4 z-10 text-[10px] tracking-widest uppercase text-foreground/25 [writing-mode:vertical-rl] rotate-180">
+      <p className="absolute bottom-4 left-4 z-10 text-[11px] tracking-wider text-foreground/40">
         Photo: Jake Rosser
       </p>
 
