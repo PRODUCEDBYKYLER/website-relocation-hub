@@ -27,8 +27,8 @@ const Hero = () => {
       {/* Top right: tagline */}
       <div ref={subRef} className="reveal relative z-10 self-end max-w-sm md:max-w-md text-right">
         <p className="text-muted-foreground text-lg md:text-2xl leading-relaxed font-light">
-          <span className="wave-underline">Your music.</span>
-          <span className="wave-underline mt-1"><em>Your vision.</em></span>
+          Your <span className="wave-underline">music.</span><br />
+          Your <span className="wave-underline">vision.</span>
         </p>
       </div>
 
