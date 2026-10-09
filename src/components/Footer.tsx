@@ -5,28 +5,28 @@ const Footer = () => {
     <footer className="border-t border-border/50 py-12 px-6 md:px-14">
       <div className="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
-          <p className="font-['Tanker'] text-foreground font-semibold">Kyler Chavez</p>
-          <p className="text-muted-foreground/70 text-xs italic mt-1">Your music-maker and collaborator</p>
+          <p className="font-['Tanker'] text-foreground text-lg font-semibold">Kyler Chavez</p>
+          <p className="text-muted-foreground/70 text-sm italic mt-1">Your music-maker and collaborator</p>
         </div>
 
         <div className="flex items-center gap-5">
           <a href="https://www.instagram.com/producedbykyler/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
-            <Instagram size={18} />
+            <Instagram size={22} />
           </a>
           <a href="https://www.youtube.com/@producedbykyler" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
-            <Youtube size={18} />
+            <Youtube size={22} />
           </a>
           <a href="https://producedbykyler.substack.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Substack">
-            <BookOpen size={18} />
+            <BookOpen size={22} />
           </a>
           <a href="mailto:kyler@producedbykyler.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
-            <Mail size={18} />
+            <Mail size={22} />
           </a>
         </div>
 
         <div className="text-right">
-          <a href="mailto:kyler@producedbykyler.com" className="text-muted-foreground/70 text-xs hover:text-primary transition-colors block">kyler@producedbykyler.com</a>
-          <p className="text-muted-foreground/50 text-xs mt-1">Round Rock, TX</p>
+          <a href="mailto:kyler@producedbykyler.com" className="text-muted-foreground/70 text-sm hover:text-primary transition-colors block">kyler@producedbykyler.com</a>
+          <p className="text-muted-foreground/50 text-sm mt-1">Round Rock, TX</p>
           <p className="text-muted-foreground/40 text-xs mt-2">&copy; {new Date().getFullYear()} Kyler Chavez. All rights reserved.</p>
         </div>
       </div>
