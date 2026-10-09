@@ -24,7 +24,7 @@ const AboutSection = () => {
             I have never given up on a song. My promise to you is that we will try every combination to make sure the final production is something you are <span className="wave-underline">proud of,</span> and fits <span className="wave-underline">your voice as an artist.</span>
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            My goal is simple — take your signature voice and craft a production that reflects your voice and the emotion of the song.
+            My goal is simple — take your signature voice and craft a production that reflects your voice and the <span className="wave-underline">emotion of the song.</span>
           </p>
         </div>
 
