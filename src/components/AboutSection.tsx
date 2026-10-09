@@ -21,7 +21,7 @@ const AboutSection = () => {
             Whether it's tracking vocals, mixing a full project — Kyler brings a collaborative, professional approach to every session.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-5">
-            I have never given up on a song. My promise to you is that we will try every combination to make sure the final production is something you are proud of, and fits your voice as an artist.
+            I have never given up on a song. My promise to you is that we will try every combination to make sure the final production is something you are <span className="wave-underline">proud of,</span> and fits <span className="wave-underline">your voice as an artist.</span>
           </p>
           <p className="text-muted-foreground leading-relaxed">
             My goal is simple — take your signature voice and craft a production that reflects your voice and the emotion of the song.
