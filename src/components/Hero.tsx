@@ -26,7 +26,7 @@ const Hero = () => {
 
       {/* Top right: tagline */}
       <div ref={subRef} className="reveal relative z-10 self-end max-w-sm md:max-w-md text-right">
-        <p className="text-muted-foreground text-lg md:text-2xl leading-relaxed font-light">
+        <p className="text-muted-foreground text-lg md:text-2xl leading-relaxed font-light underline decoration-primary decoration-2 underline-offset-8">
           Your music.<br />
           <em>Your vision.</em>
         </p>
